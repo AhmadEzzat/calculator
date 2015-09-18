@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:textSize="20sp" android:text="First Number "></TextView>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:id="@+id/editTextFirstNumber" android:layout_toRightOf="@+id/textView2" android:inputType="number">
+        <requestFocus></requestFocus>
+    </EditText>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_below="@+id/editTextFirstNumber" android:layout_alignParentLeft="true" android:text="Second Number  " android:textSize="20sp"></TextView>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number" android:layout_below="@+id/editTextFirstNumber" android:layout_alignParentRight="true" android:layout_toRightOf="@+id/textView2" android:id="@+id/editTextSecondNumber"></EditText>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_below="@+id/editTextSecondNumber" android:layout_alignParentLeft="true" android:text="Result" android:textSize="20sp"></TextView>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number" android:layout_below="@+id/editTextSecondNumber" android:layout_alignParentRight="true" android:layout_alignLeft="@+id/editTextSecondNumber" android:id="@+id/editTextResult"></EditText>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/editTextResult" android:layout_alignParentLeft="true" android:text="Plus" android:id="@+id/buttonPlus"></Button>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/buttonPlus" android:layout_toRightOf="@+id/buttonPlus" android:id="@+id/buttonMinus" android:text="Minus"></Button>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/buttonMinus" android:layout_toRightOf="@+id/buttonMinus" android:text="Multi" android:id="@+id/buttonMultiply"></Button>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/buttonMultiply" android:layout_toRightOf="@+id/buttonMultiply" android:id="@+id/buttondivide" android:text="Divide"></Button>
+</RelativeLayout>
